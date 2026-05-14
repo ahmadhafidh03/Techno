@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Dasar Technopreneurship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="bg-gradient-to-tr from-brand-600 to-indigo-500 p-2 rounded-xl text-white">
+                        <i data-lucide="rocket" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Techno<span class="text-brand-600">Base</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#mindset" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Mindset</a>
+                    <a href="#konsep" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Konsep Dasar</a>
+                    <a href="#strategi" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Strategi</a>
+                    <a href="#hki" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">HKI</a>
+                    <a href="#hki" class="px-4 py-2 rounded-full bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800 transition shadow-md hover:shadow-lg">Mulai Belajar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 overflow-hidden relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full bg-gradient-to-b from-brand-100/50 to-transparent blur-3xl -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-sm font-medium mb-6">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                </span>
+                Materi Kuis Terangkum Rapi
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                Panduan Dasar <br>
+                <span class="bg-gradient-to-r from-brand-600 to-indigo-600 gradient-text">Technopreneurship</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Selamat datang di catatan anti-bosan! Semua materi kuis sudah dirangkum menjadi poin-poin interaktif yang gampang banget diingat. Siap jadi pahlawan teknologi?
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#mindset" class="px-8 py-4 rounded-2xl bg-brand-600 text-white font-semibold hover:bg-brand-700 hover:shadow-xl hover:shadow-brand-500/30 transition-all duration-300 flex items-center justify-center gap-2">
+                    Eksplor Materi <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Mindset -->
+    <section id="mindset" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-2">Pilar Pertama</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mindset Sang Pendiri 🧠</h3>
+                <p class="text-slate-600 text-lg">Menjadi pengusaha sukses itu dimulai dari isi kepala. Ini dia 3 pilar pola pikir yang wajib kamu install di otakmu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group p-8 rounded-3xl bg-slate-50 hover:bg-white border border-slate-100 hover:border-brand-200 hover:shadow-2xl hover:shadow-brand-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="target" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Solution-Oriented</h4>
+                    <p class="text-slate-600 leading-relaxed">Fokus pada solusi! Gak cuma jago ngeluh, tapi selalu tertantang untuk cari jalan keluar dari setiap masalah yang ada di depan mata.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="group p-8 rounded-3xl bg-slate-50 hover:bg-white border border-slate-100 hover:border-green-200 hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="trending-up" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Growth Mindset</h4>
+                    <p class="text-slate-600 leading-relaxed">Percaya bahwa bakat itu <i>bukan</i> bawaan lahir yang mentok. Kemampuan bisa terus diasah tanpa henti lewat kerja keras dan mau belajar.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="group p-8 rounded-3xl bg-slate-50 hover:bg-white border border-slate-100 hover:border-purple-200 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Resiliensi</h4>
+                    <p class="text-slate-600 leading-relaxed">Daya lentur mental yang kuat. Jatuh 9 kali, bangkit 10 kali! Harus tahan banting dari segala tekanan dan kegagalan dalam berbisnis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Konsep Dasar -->
+    <section id="konsep" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 rounded-full bg-brand-600/20 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-indigo-600/20 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-brand-400 font-semibold tracking-wide uppercase text-sm mb-2">Pondasi</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">Konsep Dasar & Technopreneurship 💡</h3>
+                    <p class="text-slate-300 text-lg mb-8">Apa sih bedanya pedagang biasa sama seorang Technopreneur? Pahami definisi intinya di sini.</p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mt-1">
+                                <i data-lucide="book" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Asal Kata "Wiraswasta"</h4>
+                                <p class="text-slate-400">Sanskerta: <b>Wira</b> (Pahlawan/Berani), <b>Swa</b> (Sendiri), <b>Sta</b> (Berdiri). Intinya: Pahlawan yang berani berdiri di atas kaki sendiri!</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mt-1">
+                                <i data-lucide="cpu" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Technopreneurship</h4>
+                                <p class="text-slate-400">Technology + Entrepreneurship. Menggunakan <b>teknologi sebagai basis inovasi</b> untuk menciptakan solusi nyata.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mt-1">
+                                <i data-lucide="plus-circle" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Inti Kewirausahaan</h4>
+                                <p class="text-slate-400">Menciptakan <b>Nilai Tambah (Value Added)</b>. Produk tanpa nilai tambah cuma bakal jadi komoditas biasa yang susah bersaing.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center mt-1">
+                                <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Kreativitas & Startup</h4>
+                                <p class="text-slate-400">Kreativitas digunakan untuk <i>connecting the dots</i>. Langkah pertama bikin startup? <b>Identifikasi Masalah & Peluang!</b> Jangan asal sewa kantor.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Case Study Card -->
+                <div class="bg-slate-800/50 backdrop-blur-xl border border-slate-700 p-8 rounded-3xl relative">
+                    <div class="absolute -top-6 -right-6 text-6xl">🛵</div>
+                    <div class="w-12 h-12 bg-green-500/20 text-green-400 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="search" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Studi Kasus: Gojek & Tokopedia</h4>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Kenapa mereka sukses besar? Karena mereka tidak cuma jualan fisik. Mereka <b>mengintegrasikan teknologi</b> (aplikasi, algoritma, pembayaran digital) untuk memecahkan masalah nyata di masyarakat dengan jangkauan (scale) yang sangat luas.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-medium text-green-400">
+                        <i data-lucide="check-circle" class="w-4 h-4"></i> Validasi Masalah Nyata
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Strategi -->
+    <section id="strategi" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-2">Pola Serangan</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Strategi & Model Bisnis 📈</h3>
+                <p class="text-slate-600 text-lg">Tiga istilah keren di dunia startup yang pantang banget kalau kamu nggak tahu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Scalability -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-shadow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Penting</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Scalability (Skalabilitas)</h4>
+                    <p class="text-slate-600 text-sm">Kemampuan bisnis untuk menaikkan pendapatan besar-besaran dengan biaya tambahan yang super kecil.</p>
+                    <div class="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100 text-sm text-slate-500">
+                        <b>Contoh:</b> Bikin 1 software SaaS. Dijual ke 10 atau 10.000 orang biayanya beda tipis (cuma nambah biaya server).
+                    </div>
+                </div>
+
+                <!-- Freemium -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-shadow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="unlock" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-orange-50 text-orange-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Model Harga</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Freemium</h4>
+                    <p class="text-slate-600 text-sm">Gabungan kata <b>Free + Premium</b>. Kasih layanan dasar gratis biar orang nyoba dan ketagihan dulu.</p>
+                    <div class="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100 text-sm text-slate-500">
+                        <b>Contoh:</b> Spotify (dengar lagu gratis ada iklan), LinkedIn. Kalau mau fitur lengkap, baru bayar langganan!
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-shadow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="smartphone" class="w-6 h-6"></i>
+                        </div>
+                        <span class="bg-rose-50 text-rose-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Pemasaran</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Digital Marketing</h4>
+                    <p class="text-slate-600 text-sm">Pemasaran menggunakan internet & elektronik seperti Media Sosial (SMM) dan Mesin Pencari (SEO).</p>
+                    <div class="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100 text-sm text-slate-500">
+                        <b>Keunggulan:</b> Cara paling ampuh, murah, dan terukur buat menjangkau jutaan orang cukup dari balik layar laptop.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: HKI -->
+    <section id="hki" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-2">Pelindung Ide</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Hak Kekayaan Intelektual 🛡️</h3>
+                    <p class="text-slate-600 text-lg">Anak teknologi wajib ngerti HKI biar idenya gak dicuri orang! Fungsi utamanya: <b>melindungi inovasi dari klaim pihak lain.</b></p>
+                </div>
+                
+                <!-- Fact Badge -->
+                <div class="bg-amber-50 border border-amber-200 p-4 rounded-2xl max-w-sm flex gap-4 items-start shadow-sm">
+                    <div class="text-amber-500 mt-1"><i data-lucide="hourglass" class="w-6 h-6"></i></div>
+                    <div>
+                        <h5 class="font-bold text-amber-900 text-sm mb-1">Fakta Penting Masa Berlaku</h5>
+                        <p class="text-xs text-amber-800 leading-relaxed">Masa berlaku <b>Hak Cipta</b> (seperti buku/karya tulis) adalah <b>Seumur hidup pencipta + 70 Tahun</b> setelah pencipta meninggal. Super lama!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HKI Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Hak Cipta -->
+                <div class="border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-slate-50">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center"><i data-lucide="copyright" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold text-slate-900">Hak Cipta</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 h-10">Melindungi karya seni, sastra, ilmu pengetahuan, dan <b>Program Komputer</b>.</p>
+                    <div class="bg-white border border-slate-100 rounded-xl p-3 text-xs text-slate-500 font-medium shadow-sm">
+                        <b>Contoh:</b> Buku, Lagu, Source Code Koding, Desain UI/UX.
+                    </div>
+                </div>
+
+                <!-- Paten -->
+                <div class="border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-slate-50">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center"><i data-lucide="microscope" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold text-slate-900">Paten</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 h-10">Melindungi penemuan baru di bidang <b>Teknologi</b> (solusi teknis, langkah inventif).</p>
+                    <div class="bg-white border border-slate-100 rounded-xl p-3 text-xs text-slate-500 font-medium shadow-sm">
+                        <b>Contoh:</b> Teknologi mesin baru, proses rekayasa kimia.
+                    </div>
+                </div>
+
+                <!-- Merek -->
+                <div class="border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-slate-50">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center"><i data-lucide="tag" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold text-slate-900">Merek (Brand)</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 h-10">Melindungi identitas visual (Nama, Logo, Simbol, Warna pembeda).</p>
+                    <div class="bg-white border border-slate-100 rounded-xl p-3 text-xs text-slate-500 font-medium shadow-sm">
+                        <b>Contoh:</b> Nama "Gojek", Logo apel keroak "Apple".
+                    </div>
+                </div>
+
+                <!-- Rahasia Dagang -->
+                <div class="border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-slate-50">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-xl flex items-center justify-center"><i data-lucide="lock" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold text-slate-900">Rahasia Dagang</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 h-10">Informasi bisnis/teknis yang dijaga kerahasiaannya & bernilai ekonomi.</p>
+                    <div class="bg-white border border-slate-100 rounded-xl p-3 text-xs text-slate-500 font-medium shadow-sm">
+                        <b>Contoh:</b> Resep Coca-Cola, Algoritma rahasia Google.
+                    </div>
+                </div>
+
+                <!-- Desain Industri -->
+                <div class="border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-slate-50">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center"><i data-lucide="smartphone" class="w-5 h-5"></i></div>
+                        <h4 class="text-lg font-bold text-slate-900">Desain Industri</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4 h-10">Melindungi tampilan estetika, konfigurasi, atau bentuk luar sebuah produk.</p>
+                    <div class="bg-white border border-slate-100 rounded-xl p-3 text-xs text-slate-500 font-medium shadow-sm">
+                        <b>Contoh:</b> Bentuk unik botol Yakult, desain fisik iPhone.
+                    </div>
+                </div>
+                
+                <!-- Empty spacer for grid alignment on desktop -->
+                <div class="hidden lg:block border border-dashed border-slate-200 rounded-3xl bg-slate-50/50 flex items-center justify-center">
+                    <p class="text-slate-400 text-sm font-medium text-center px-4">Lindungi karya Anda sebelum diklaim orang lain!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-slate-800 rounded-full mb-6">
+                <i data-lucide="star" class="w-5 h-5 text-yellow-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Semangat Belajarnya!</h3>
+            <p class="max-w-md mx-auto mb-8">Pahami konsepnya, bukan cuma dihafal. Sukses terus untuk ujian dan perjalanan technopreneurship kamu 🌟</p>
+            <p class="text-sm">© 2026 TechnoBase. Dibuat khusus untuk rangkuman belajar.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+        
+        // Simple Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
